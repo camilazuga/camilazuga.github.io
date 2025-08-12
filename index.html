@@ -171,34 +171,48 @@ Nos dedicamos a investigar las <strong>bases cognitivas y neurales del aprendiza
 </ul>
 </section>	
 
-	<section id="publications">
-    <h2>Publicaciones</h2>
-    <div id="publications-list">Cargando publicaciones...</div>
-	</section>
-	<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    fetch('publications.bib')
-      .then(response => {
-        if (!response.ok) throw new Error('No se pudo cargar publications.bib');
-        return response.text();
-      })
-      .then(bibtex => {
-        const cite = new Cite(bibtex);
-        document.getElementById('publications-list').innerHTML = cite.format('bibliography', {
-          format: 'html',
-          template: 'apa',
-          lang: 'es'
-        });
-      })
-      .catch(err => {
-        const pubList = document.getElementById('publications-list');
-        if(pubList) {
-          pubList.textContent = 'Error cargando publicaciones';
-        }
-        console.error(err);
-      });
-  });
-</script>
+<section id="publications">
+  <h2>Publicaciones</h2>
+ <ul style="list-style: none; padding: 0;">
+  <li>
+    Cabana, Á., <strong>Zugarramurdi, C.</strong>, Valle-Lisboa, J. C., & De Deyne, S. (2024). 
+    <a href="https://link.springer.com/article/10.3758/s13428-023-02070-z" target="_blank" rel="noopener noreferrer" style="color: #1f8b97; text-decoration: none; border-bottom: 1px solid transparent; transition: border-bottom-color 0.3s;">
+      The "small world of words" free association norms for rioplatense spanish
+    </a>. Behavior Research Methods, 56(2), 968–985.
+  </li>
+  <li>
+    Ronqui, V., Valle Lisboa, J., & <strong>Zugarramurdi, C.</strong> (2024). 
+    <a href="https://lexiland.com.uy/papers/Ronqui%20et%20al.%20-%20Presentacion%20y%20analisis%20psicometrico%20del%20instrumento%20en%20espanol.pdf" target="_blank" rel="noopener noreferrer" style="color: #1f8b97; text-decoration: none; border-bottom: 1px solid transparent; transition: border-bottom-color 0.3s;">
+      Lexiland: Un instrumento digital para la identificación del riesgo lector en el ámbito escolar
+    </a>.
+  </li>
+  <li>
+    <strong>Zugarramurdi, C.</strong>, Assis, M. S., & Valle-Lisboa, J. (2022). 
+    <a href="https://lexiland.com.uy/papers/Zugarramurdi%20et%20al.%20-%202022%20-%20Technology%20on%20Our%20Side%20Using%20Technology%20for%20Trans.pdf" target="_blank" rel="noopener noreferrer" style="color: #1f8b97; text-decoration: none; border-bottom: 1px solid transparent; transition: border-bottom-color 0.3s;">
+      Technology on Our Side: Using Technology for Transferring Cognitive Science to Education
+    </a>. In Cognitive Sciences and Education in Non-WEIRD Populations: A Latin American Perspective (pp. 287–303). Springer International Publishing Cham.
+  </li>
+  <li>
+    <strong>Zugarramurdi, C.</strong>, Fernández, L., Lallier, M., Carreiras, M., & Valle-Lisboa, J. C. (2022). 
+    <a href="https://lexiland.com.uy/papers/Zugarramurdi%20et%20al._2022_Lexiland%20A%20Tablet-based%20Universal%20Screener%20for%20Reading%20Difficulties%20in%20the%20School%20Context.pdf" target="_blank" rel="noopener noreferrer" style="color: #1f8b97; text-decoration: none; border-bottom: 1px solid transparent; transition: border-bottom-color 0.3s;">
+      Lexiland: A tablet-based universal screener for reading difficulties in the school context
+    </a>. Journal of Educational Computing Research, 60(7), 1688–1715.
+  </li>
+  <li>
+    <strong>Zugarramurdi, C.</strong>, Fernández, L., Lallier, M., Valle-Lisboa, J. C., & Carreiras, M. (2022). 
+    <a href="https://psycnet.apa.org/buy/2022-45365-001" target="_blank" rel="noopener noreferrer" style="color: #1f8b97; text-decoration: none; border-bottom: 1px solid transparent; transition: border-bottom-color 0.3s;">
+      Mind the orthography: Revisiting the contribution of prereading phonological awareness to reading acquisition
+    </a>. Developmental Psychology, 58(6), 1003.
+  </li>
+  <li>
+    <strong>Zugarramurdi, C.</strong>, Fernández, L., Lallier, M., Valle-Lisboa, J. C., & Carreiras, M. (2023). 
+    <a href="https://www.biorxiv.org/content/10.1101/2023.10.04.560887v1.abstract" target="_blank" rel="noopener noreferrer" style="color: #1f8b97; text-decoration: none; border-bottom: 1px solid transparent; transition: border-bottom-color 0.3s;">
+      Early delta cortical tracking to non-verbal auditory stimuli predicts reading skills: A one-year longitudinal study
+    </a>. bioRxiv, 2023–10.
+  </li>
+</ul>
+
+</section>
 
 <section id="outreach">
   <h2>Divulgación</h2>
