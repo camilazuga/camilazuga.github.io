@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Publicaciones Académicas</title>
+  <script src="https://cdn.jsdelivr.net/npm/citation-js@0.5.0/build/citation.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 0 15px;
+      line-height: 1.5;
+      color: #222;
+    }
+    h2 {
+      color: #004080;
+      border-bottom: 2px solid #004080;
+      padding-bottom: 5px;
+    }
+    .citation-list {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Publicaciones</h2>
+  <div id="publications" class="citation-list">Cargando publicaciones...</div>
+
+  <script>
+    fetch('publications.bib')
+      .then(response => response.text())
+      .then(bibtex => {
+        const cite = new Cite(bibtex);
+        document.getElementById('publications').innerHTML = cite.format('bibliography', {
+          format: 'html',
+          template: 'apa',
+          lang: 'es'
+        });
+      })
+      .catch(err => {
+        document.getElementById('publications').textContent = 'Error cargando publicaciones';
+        console.error(err);
+      });
+  </script>
+</body>
+</html>
