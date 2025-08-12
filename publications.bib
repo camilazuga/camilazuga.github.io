@@ -1,47 +1,57 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <title>Publicaciones Académicas</title>
-  <script src="https://cdn.jsdelivr.net/npm/citation-js@0.5.0/build/citation.min.js"></script>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 700px;
-      margin: 40px auto;
-      padding: 0 15px;
-      line-height: 1.5;
-      color: #222;
-    }
-    h2 {
-      color: #004080;
-      border-bottom: 2px solid #004080;
-      padding-bottom: 5px;
-    }
-    .citation-list {
-      margin-top: 20px;
-    }
-  </style>
-</head>
-<body>
-  <h2>Publicaciones</h2>
-  <div id="publications" class="citation-list">Cargando publicaciones...</div>
+@article{cabana2024small,
+  title={The" small world of words" free association norms for rioplatense spanish},
+  author={Cabana, {\'A}lvaro and Zugarramurdi, Camila and Valle-Lisboa, Juan C and De Deyne, Simon},
+  journal={Behavior Research Methods},
+  volume={56},
+  number={2},
+  pages={968--985},
+  year={2024},
+  publisher={Springer US New York}
+}
 
-  <script>
-    fetch('publications.bib')
-      .then(response => response.text())
-      .then(bibtex => {
-        const cite = new Cite(bibtex);
-        document.getElementById('publications').innerHTML = cite.format('bibliography', {
-          format: 'html',
-          template: 'apa',
-          lang: 'es'
-        });
-      })
-      .catch(err => {
-        document.getElementById('publications').textContent = 'Error cargando publicaciones';
-        console.error(err);
-      });
-  </script>
-</body>
-</html>
+@article{zugarramurdi2022lexiland,
+  title={Lexiland: A tablet-based universal screener for reading difficulties in the school context},
+  author={Zugarramurdi, Camila and Fern{\'a}ndez, Luc{\'\i}a and Lallier, Marie and Carreiras, Manuel and Valle-Lisboa, Juan C},
+  journal={Journal of Educational Computing Research},
+  volume={60},
+  number={7},
+  pages={1688--1715},
+  year={2022},
+  publisher={SAGE Publications Sage CA: Los Angeles, CA}
+}
+
+@article{zugarramurdi2022mind,
+  title={Mind the orthography: Revisiting the contribution of prereading phonological awareness to reading acquisition.},
+  author={Zugarramurdi, Camila and Fern{\'a}ndez, Luc{\'\i}a and Lallier, Marie and Valle-Lisboa, Juan Carlos and Carreiras, Manuel},
+  journal={Developmental Psychology},
+  volume={58},
+  number={6},
+  pages={1003},
+  year={2022},
+  publisher={American Psychological Association}
+}
+
+@incollection{zugarramurdi2022technology,
+  title={Technology on Our Side: Using Technology for Transferring Cognitive Science to Education},
+  author={Zugarramurdi, Camila and Assis, Maria Soledad and Valle-Lisboa, Juan},
+  booktitle={Cognitive Sciences and Education in Non-WEIRD Populations: A Latin American Perspective},
+  pages={287--303},
+  year={2022},
+  publisher={Springer International Publishing Cham}
+}
+
+@article{zugarramurdi2023early,
+  title={Early delta cortical tracking to non-verbal auditory stimuli predicts reading skills: A one-year longitudinal study},
+  author={Zugarramurdi, Camila and Fern{\'a}ndez, Luc{\'\i}a and Lallier, Marie and Valle-Lisboa, Juan Carlos and Carreiras, Manuel},
+  journal={bioRxiv},
+  pages={2023--10},
+  year={2023},
+  publisher={Cold Spring Harbor Laboratory}
+}
+
+@article{ronqui2024lexiland,
+  title={Lexiland: un instrumento digital para la identificaci{\'o}n del riesgo lector en el {\'a}mbito escolar.},
+  author={Ronqui, Valentina and Valle Lisboa, Juan and Zugarramurdi, Camila},
+  year={2024},
+  publisher={Comisi{\'o}n sectorial de investigaci{\'o}n cient{\'\i}fica}
+}
