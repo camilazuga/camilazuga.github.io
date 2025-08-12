@@ -73,8 +73,8 @@
 
     <section id="publications2">
     <h2>Publicaciones</h2>
-    <div id="publications-list">Cargando publicaciones...</div>
-  </section>section>
+    <div id="publications2-list">Cargando publicaciones...</div>
+  </section>
 
   <section id="outreach">
     <h2>Divulgación y Outreach</h2>
@@ -107,7 +107,7 @@
 		  .then(response => response.text())
 		  .then(bibtex => {
 			const cite = new Cite(bibtex);
-			document.getElementById('publications-list').innerHTML = cite.format('bibliography', {
+			document.getElementById('publications2-list').innerHTML = cite.format('bibliography', {
 			  format: 'html',
 			  template: 'apa',
 			  lang: 'es'
