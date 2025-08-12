@@ -79,7 +79,7 @@
   <section id="bio">
     <h2>Biografía</h2>
     <p style="text-align: justify;">
-Me dedico a investigar las bases cognitivas y neurales del aprendizaje de la lectura. Obtuve mi título de doctorado en Lingüística/Neurociencia Cognitiva en la Universidad del País Vasco y el Basque Center on Cognition Brain and Language (BCBL). En mi tesis doctoral realicé aportes teóricos novedosos sobre el aprendizaje de la lectura en español y creé <a href="https://lexiland.com.uy" target="_blank" rel="noopener noreferrer">Lexiland</a> , una App para identificar el riesgo lector. Soy Licenciada en Biología Humana por la Universidad de la República (UdelaR) y Magíster en Neurociencias por el Programa de Desarrollo de las Ciencias Básicas (UdelaR). Actualmente, soy Profesora Adjunta en la Facultad de Psicología de la Universidad de la República, donde dicto cursos sobre aprendizaje de la lectura, metodología de la investigación y estadística. También soy investigadora del Centro Interdisciplinario en Cognición para la Enseñanza y el Aprendizaje (CICEA, UdelaR) y pertenezco al Sistema Nacional de Investigadores. Mis intereses de investigación se centran en la integración de las ciencias cognitivas y la educación. En este ámbito, dicto conferencias y talleres a docentes para promover el diálogo entre cómo los niños y niñas aprenden a leer y cómo enseñamos. Porque creo que todos los niños y niñas tienen derecho a leer y a escribir, y que no lo estamos garantizando.</p>
+Me dedico a investigar las bases cognitivas y neurales del aprendizaje de la lectura. Obtuve mi título de doctorado en Lingüística/Neurociencia Cognitiva en la Universidad del País Vasco y el Basque Center on Cognition Brain and Language (BCBL). En mi tesis doctoral realicé aportes teóricos novedosos sobre el aprendizaje de la lectura en español y creé <strong><a href="https://lexiland.com.uy" target="_blank" rel="noopener noreferrer">Lexiland</a></strong>, una App para identificar el riesgo lector. Soy Licenciada en Biología Humana por la Universidad de la República (UdelaR) y Magíster en Neurociencias por el Programa de Desarrollo de las Ciencias Básicas (UdelaR). Actualmente, soy Profesora Adjunta en la Facultad de Psicología de la Universidad de la República, donde dicto cursos sobre aprendizaje de la lectura, metodología de la investigación y estadística. También soy investigadora del Centro Interdisciplinario en Cognición para la Enseñanza y el Aprendizaje (CICEA, UdelaR) y pertenezco al Sistema Nacional de Investigadores. Mis intereses de investigación se centran en la integración de las ciencias cognitivas y la educación. En este ámbito, dicto conferencias y talleres a docentes para promover el diálogo entre cómo los niños y niñas aprenden a leer y cómo enseñamos. Porque creo que todos los niños y niñas tienen derecho a leer y a escribir, y que no lo estamos garantizando.</p>
  
   </section>
 	<section id="publications">
@@ -90,18 +90,69 @@ Me dedico a investigar las bases cognitivas y neurales del aprendizaje de la lec
 <section id="outreach">
   <h2>Divulgación</h2>
   <ul>
-    <li><strong>Julio 2025:</strong> <a href="https://www.youtube.com/watch?v=0bqVrfIJ8oo" target="_blank" rel="noopener noreferrer">Panel de discusión: Desafíos y oportunidades para la enseñanza de la lengua en primaria y media.Encuentro de innovación pedagógica. Ceibal</a>
-	<br/>
-      <iframe width="250" height="250" 
-        src="https://www.youtube.com/embed/0bqVrfIJ8oo" 
-        title="Video de YouTube" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-      </iframe>
-	</li>
-    <li><strong>Julio 2025:</strong>Docente invitada en Didáctica de la Lengua. Instituto de Formación Docente. Maldonado.</li>
+    <li class="outreach-item">
+      <div class="fecha"><strong>Julio 2025:</strong></div>
+      <div class="titulo">
+        <a href="https://www.youtube.com/watch?v=0bqVrfIJ8oo" target="_blank" rel="noopener noreferrer">
+          Panel de discusión: Desafíos y oportunidades para la enseñanza de la lengua en primaria y media. Encuentro de innovación pedagógica. Ceibal
+        </a>
+      </div>
+      <div class="media">
+        <iframe width="250" height="250" 
+          src="https://www.youtube.com/embed/0bqVrfIJ8oo" 
+          title="Video de YouTube" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </li>
+    <li class="outreach-item">
+      <div class="fecha"><strong>Julio 2025:</strong></div>
+      <div class="titulo">
+        Docente invitada en Didáctica de la Lengua. Instituto de Formación Docente. Maldonado.
+      </div>
+      <div class="media">
+        <!-- Sin media aquí -->
+      </div>
+    </li>
   </ul>
 </section>
+
+<style>
+  #outreach ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .outreach-item {
+    display: grid;
+    grid-template-columns: 120px 1fr 260px; /* columnas: fecha, título, media */
+    gap: 16px;
+    align-items: start;
+    margin-bottom: 24px;
+  }
+
+  .fecha {
+    font-weight: bold;
+  }
+
+  .titulo a {
+    color: #0A66C2; /* azul LinkedIn o el que quieras */
+    text-decoration: none;
+  }
+
+  .titulo a:hover {
+    text-decoration: underline;
+  }
+
+  .media iframe {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+</style>
+
 
   <section id="students">
     <h2>Estudiantes</h2>
