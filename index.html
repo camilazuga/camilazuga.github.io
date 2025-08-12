@@ -71,9 +71,9 @@
     <p>Breve texto biográfico académico, tu área de investigación y datos relevantes.</p>
  
   </section>
-	<section id="publications-list">
+	<section id="publications">
     <h2>Publicaciones</h2>
-    <div id="publications2-list">Cargando publicaciones...</div>
+    <div id="publications-list">Cargando publicaciones...</div>
 	</section>
 
   <section id="outreach">
@@ -99,7 +99,7 @@
     <h3>Pregrado</h3>
     <ul>
       <li>Florencia Filippi</li>
-      <li>Melani Santos</li>li>
+      <li>Melani Santos</li>
     </ul>
   </section>
 	
@@ -112,14 +112,14 @@
       })
       .then(bibtex => {
         const cite = new Cite(bibtex);
-        document.getElementById('publications2-list').innerHTML = cite.format('bibliography', {
+        document.getElementById('publications-list').innerHTML = cite.format('bibliography', {
           format: 'html',
           template: 'apa',
           lang: 'es'
         });
       })
       .catch(err => {
-        const pubList = document.getElementById('publications2-list');
+        const pubList = document.getElementById('publications-list');
         if(pubList) {
           pubList.textContent = 'Error cargando publicaciones';
         }
@@ -130,6 +130,7 @@
 
 </body>
 </html>
+
 
 
 
